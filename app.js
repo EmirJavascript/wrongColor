@@ -4,7 +4,7 @@ const colors = ['#fc5', '#5cf', '#5c5', '#e41', '#d6f']
 let currentColor = 0
 
 const changeColor = (index) => {
-  document.body.style.background = colors[0]
+  document.body.style.background = colors[index]
   buttons.forEach((btn) => {
     btn.classList.remove('active')
   })
@@ -18,4 +18,4 @@ buttons.forEach((btn, index) => {
     changeColor(index)
   })
 })
-buttons[0].classList.add('active')
+buttons[index].classList.add('active')
